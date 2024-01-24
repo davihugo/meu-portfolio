@@ -32,23 +32,3 @@ formEnviar.addEventListener('click', (event) => {
 });
 
 
-// Adiciona rolagem suave para os links de navegação
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-formEnviar.addEventListener('click', (event) => {
-    event.preventDefault();
-    enviarParaWhatsApp();
-});
