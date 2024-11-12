@@ -11,8 +11,9 @@ body {
 }
 
 .interface {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .flex {
@@ -49,6 +50,61 @@ header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
+
+/* SKILLS */
+
+
+.skills {
+    padding: 60px 0;
+    background-color: #000;
+}
+
+.skills .titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.skills .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skills-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2c2c;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skills-box:hover {
+    transform: scale(1.05);
+}
+
+.skills-box i {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.skills-box h3 {
+    font-size: 1.5rem;
+    color: #c7c3c3;
+    margin-bottom: 10px;
+}
+
+.skills-box p {
+    font-size: 1rem;
+    color: #f9f9f9;
+}
+
 
 /* MENU MOBILE */
 
@@ -150,8 +206,62 @@ form .btn-enviar input:hover {
 /* ESTILO DO TOPO DO SITE */
 
 section.topo-do-site {
-    padding: 40px 4%;
+    background: url('Imagens/fundo.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.hero-content h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: black;
 }
 
 section.topo-do-site .flex {
@@ -433,6 +543,8 @@ footer .line-footer p a {
     
     }
 
+    
+
     /*CABEÇALHO*/
     .menu-desktop, .btn-contato {
         display: none;
@@ -453,7 +565,7 @@ footer .line-footer p a {
         
     }
 
-    /*TOPO DO SITE*/s
+    /*TOPO DO SITE*/
 
 
     section.topo-do-site .flex{
